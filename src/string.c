@@ -13,8 +13,8 @@ void *memset(void *str, int c, size_t n)
 
 char *strcat(char *dest, const char *src)
 {
-    int i = strlen(dest);
-    int j = 0;
+    size_t i = strlen(dest);
+    size_t j = 0;
 
     while (dest[i++] = src[j++]);
 
@@ -23,7 +23,7 @@ char *strcat(char *dest, const char *src)
 
 char *strcpy(char *dest, const char *src)
 {
-    int i = 0;
+    size_t i = 0;
 
     while (dest[i] = src[i++]);
 
@@ -32,7 +32,7 @@ char *strcpy(char *dest, const char *src)
 
 char *strncpy(char *dest, const char *src, size_t n)
 {
-    for (int i = 0; i < n; i++) {
+    for (size_t i = 0; i < n; i++) {
         dest[i] = src[i];
     }
 
