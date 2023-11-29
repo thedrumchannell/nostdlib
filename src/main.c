@@ -1,4 +1,4 @@
-// gcc -s -o main src/*.c -lkernel32 -lopengl32 -lgdi32 -luser32 -nostdlib --freestanding -mwindows --entry=_start
+// gcc -s -o main src/*.c -lkernel32 -lopengl32 -lgdi32 -luser32 -nostdlib -mwindows --entry=_start
 
 #include "window.h"
 #include <GL/gl.h>
